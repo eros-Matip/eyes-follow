@@ -6,30 +6,28 @@
   height: 100vh;
   background: radial-gradient(#669fce, #2e80c4);
 }
-
+.robot {
+  position: relative;
+}
 .head {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 .eye {
   display: flex;
-  margin: 20px;
-  width: 48px;
-  height: 48px;
+  margin: 38px;
+  margin-top: 60px;
+  width: 90px;
+  height: 90px;
   background: #fff;
   border-radius: 50%;
   border: 1px solid black;
 }
-.eye-left {
-  left: 26px;
-}
-.eye-right {
-  right: 26px;
-}
+
 .eye-inner {
   position: relative;
   display: inline-block;
@@ -38,16 +36,16 @@
   height: 40px;
   background-color: black;
   border-radius: 50%;
-  margin-left: 4px;
-  margin-top: 4px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .eye-inner::after {
   position: absolute;
-  top: 14px;
-  left: 12px;
+  top: 5px;
+  left: 5px;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background: radial-gradient(rgb(253, 253, 253), rgb(160, 212, 163));
   border-radius: 50%;
   content: "";
 }
